@@ -1,5 +1,88 @@
-<ion-segment value="test">
-  <ion-segment-button value="test">Test</ion-segment-button>
-  <ion-segment-button value="test1">Test</ion-segment-button>
-  <ion-segment-button value="test2">Test</ion-segment-button>
-</ion-segment>
+<ion-app>
+  <ion-content>
+    <ion-row>
+      <!-- Default Button -->
+      <ion-button>Default</ion-button>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default Card -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit
+          clean.
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default Checkbox -->
+      <ion-checkbox></ion-checkbox>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default Chip -->
+      <ion-chip>
+        <ion-label>Default</ion-label>
+      </ion-chip>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default DateTime -->
+      <ion-item>
+        <ion-label>MMMM</ion-label>
+        <ion-datetime
+          displayFormat="MMMM"
+          value="2012-12-15T13:47:20.789"
+        ></ion-datetime>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default Input -->
+      <ion-input></ion-input>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default textarea -->
+      <ion-textarea></ion-textarea>
+    </ion-row>
+
+    <ion-row>
+      <!-- Default Segment -->
+      <ion-segment value="friends">
+        <ion-segment-button value="friends">
+          <ion-label>Friends</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="enemies">
+          <ion-label>Enemies</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+
+    <ion-row>
+      <ion-item>
+        <ion-label>Hair Color</ion-label>
+        <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="brown">Brown</ion-select-option>
+          <ion-select-option value="blonde">Blonde</ion-select-option>
+          <ion-select-option value="black">Black</ion-select-option>
+          <ion-select-option value="red">Red</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-row>
+
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
+</ion-app>

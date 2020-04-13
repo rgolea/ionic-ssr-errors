@@ -10,7 +10,7 @@ import { IonicModule } from '@ionic/angular';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     IonicModule.forRoot({
       mode: 'ios'
